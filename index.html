@@ -18,5 +18,19 @@
 	  <a href= "contact.html"> contact </a>
  	</nav>
 		<h1>This is the main heading of this page</h1>
+		<button>Test button</button>
+
+		<form action="" method="GET">
+			<input type="text" placeholder="tell me your name" id="name" name="username">
+			<input type="submit" value="test output" id="submit-form">
+		</form>
 	</body>
+
+	<script>
+		document.getELementById("submit-form").addEventListener("click", e=>{
+			e.preventDefault();
+			alert("Your name is "+document.getElementById("name").value;
+		})
+			
+	</script>
 </html>
